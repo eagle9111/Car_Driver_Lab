@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/backarrow"
+        android:background="#0000"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/tvcarsname"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Car name brand"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:background="#5EB3F4"
+        />
+
+
+
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+
+
+</LinearLayout>

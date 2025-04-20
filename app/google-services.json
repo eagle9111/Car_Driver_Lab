@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "864689989652",
+    "firebase_url": "https://car-driver-lab-default-rtdb.firebaseio.com",
+    "project_id": "car-driver-lab",
+    "storage_bucket": "car-driver-lab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864689989652:android:b705451155c2e9dc0a9f01",
+        "android_client_info": {
+          "package_name": "com.eagle.cardriverlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864689989652-4hevgatcf1jsup0vqot3jo6rj1nh8pke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eagle.cardriverlab",
+            "certificate_hash": "529086e99051b30a4c39bfbb749962745cf8de3c"
+          }
+        },
+        {
+          "client_id": "864689989652-90jognc3v69jfillehehu320f7vp6m1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eagle.cardriverlab",
+            "certificate_hash": "812419371feddf31f8945a1db7b9449afb44913c"
+          }
+        },
+        {
+          "client_id": "864689989652-48njivveper96q7afjphmknld59e8ook.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGmYx6ZLmScPTXXSzJ4ZJJB8e9HmCuN6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864689989652-48njivveper96q7afjphmknld59e8ook.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

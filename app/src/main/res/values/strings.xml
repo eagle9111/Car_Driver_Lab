@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Car Driver Lab</string>
+    <string name="default_web_client_id">864689989652-48njivveper96q7afjphmknld59e8ook.apps.googleusercontent.com</string>
+
+
+    <string-array name="audio_options">
+        <item>default</item>
+        <item>BMW Turbo</item>
+
+    </string-array>
+</resources>
+

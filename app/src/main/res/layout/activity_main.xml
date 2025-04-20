@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <!-- Hamburger Menu Button -->
+    <ImageButton
+        android:id="@+id/ibtnHamMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Menu"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#2C3E50" />
+
+
+    <!-- Car Name -->
+    <TextView
+        android:id="@+id/tvCarName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Car Name"
+        android:textColor="#141414"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.1"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibtnHamMenu" />
+
+    <!-- Max Speed -->
+    <TextView
+        android:id="@+id/tvMaxSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Max Speed km/h"
+        android:textColor="#7F8C8D"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCarName" />
+
+    <!-- Break Time -->
+    <TextView
+        android:id="@+id/breakpersec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.000"
+        android:textSize="28sp"
+        android:textColor="#E74C3C"
+        android:visibility="gone"
+        android:fontFamily="sans-serif-light"
+        android:alpha="0.9"
+        app:layout_constraintBottom_toBottomOf="@id/tvCurrentSpeed"
+        app:layout_constraintEnd_toStartOf="@id/tvCurrentSpeed"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCurrentSpeed" />
+
+    <!-- Current Speed -->
+    <TextView
+        android:id="@+id/tvCurrentSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:text="000"
+        android:textColor="#2C3E50"
+        android:textSize="120sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:elevation="4dp"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        app:layout_constraintBottom_toTopOf="@id/buttonsGuideline"
+        app:layout_constraintEnd_toStartOf="@id/accpersec"
+        app:layout_constraintStart_toEndOf="@id/breakpersec"
+        app:layout_constraintTop_toBottomOf="@id/tvMaxSpeed" />
+
+    <!-- Acceleration Time -->
+    <TextView
+        android:id="@+id/accpersec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.000"
+        android:textSize="28sp"
+        android:textColor="#27AE60"
+        android:visibility="gone"
+        android:fontFamily="sans-serif-light"
+        android:alpha="0.9"
+        app:layout_constraintBottom_toBottomOf="@id/tvCurrentSpeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvCurrentSpeed"
+        app:layout_constraintTop_toTopOf="@id/tvCurrentSpeed" />
+
+    <!-- Guideline for buttons -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buttonsGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <!-- Brake Button -->
+    <ImageButton
+        android:id="@+id/ibtnBreak"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="80dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Brake"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pedalsdec"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ibtnAccelerate"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/buttonsGuideline"
+        app:layout_constraintWidth_percent="0.4"
+        app:tint="#E74C3C" />
+
+    <!-- Accelerate Button -->
+    <ImageButton
+        android:id="@+id/ibtnAccelerate"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Accelerate"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pedalsacc"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ibtnBreak"
+        app:layout_constraintTop_toTopOf="@id/buttonsGuideline"
+        app:layout_constraintVertical_bias="0.614"
+        app:layout_constraintWidth_percent="0.4"
+        app:tint="#27AE60" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

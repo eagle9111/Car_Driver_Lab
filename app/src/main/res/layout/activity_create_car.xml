@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#B1B4B6"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Hamburger Menu Button -->
+        <ImageButton
+            android:id="@+id/ibtnHamMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Menu"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu"
+            app:tint="#2C3E50" />
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Car"
+            android:textSize="24sp"
+            android:textColor="#2C3E50"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="24dp"/>
+
+        <!-- Car Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutCarName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#2C3E50"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:helperText="Enter the car name"
+        app:counterEnabled="true"
+        app:counterMaxLength="50">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputCarName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2C3E50"
+        android:backgroundTint="#2C3E50"
+        android:hint="Car Name"
+        android:inputType="textCapWords"
+        android:maxLength="50"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Acceleration -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutAcceleration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#2C3E50"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    app:suffixText="seconds"
+    app:helperText="Acceleration per sec">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputAccelerate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2C3E50"
+    android:hint="Acceleration"
+    android:inputType="numberDecimal"
+    android:maxLength="5"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Braking -->
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/layoutBraking"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:textColor="#2C3E50"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    app:suffixText="seconds"
+    app:helperText="Braking per sec ">
+
+<com.google.android.material.textfield.TextInputEditText
+android:id="@+id/inputDecelerate"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textColor="#2C3E50"
+    android:hint="Braking Distance"
+    android:inputType="numberDecimal"
+    android:maxLength="5"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Max Speed -->
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/layoutMaxSpeed"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:textColor="#2C3E50"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    app:suffixText="km/h"
+    app:helperText="Maximum speed of the vehicle">
+
+<com.google.android.material.textfield.TextInputEditText
+android:id="@+id/inputMaxSpeed"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:hint="Maximum Speed"
+    android:inputType="number"
+    android:maxLength="4"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save Button -->
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnSaveCar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="24dp"
+android:layout_marginBottom="16dp"
+android:padding="12dp"
+android:text="Save Car Details"
+style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+android:backgroundTint="#2C3E50"
+    android:textColor="#FFFFFF"
+    />
+
+    <!-- My Cars Button -->
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnMyCars"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:padding="12dp"
+android:text="My Cars"
+style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+android:backgroundTint="#2C3E50"
+    android:textColor="#FFFFFF"
+    />
+
+    </LinearLayout>
+    </ScrollView>

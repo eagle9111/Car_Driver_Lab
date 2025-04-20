@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:background="#E0E0E0"
+    android:padding="16dp">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <!-- Car Test -->
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            android:padding="12dp">
+
+            <View
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="#FF5722"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/menuOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Test"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Car Models -->
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            android:padding="12dp">
+
+            <View
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="#03A9F4"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/menuOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Models"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Create Car -->
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            android:padding="12dp">
+
+            <View
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="#4CAF50"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/menuOption3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Car"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Settings -->
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            android:padding="12dp">
+
+            <View
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="#FFC107"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/menuOption4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Profile -->
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            android:padding="12dp">
+
+            <View
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="#9C27B0"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/menuOption5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- For You Cars -->
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            android:padding="12dp">
+
+            <View
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="#FF9800"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/menuOption6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For You Cars"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+        <!-- Admin -->
+        <LinearLayout
+            android:id="@+id/admin"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            android:padding="12dp">
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="#D93D7C"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/menuOption7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Pannel"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>

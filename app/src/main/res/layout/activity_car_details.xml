@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:src="@drawable/backarrow"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="start"/>
+
+    <!-- Car Image with Year Badge -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/carImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/car1"
+            android:background="@drawable/black_border"
+            android:scaleType="centerCrop"/>
+
+        <!-- Year Badge -->
+        <TextView
+            android:id="@+id/caryear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2025"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:background="@drawable/badge_background"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"/>
+    </FrameLayout>
+
+    <!-- Car Name and Price Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:weightSum="2">
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/carName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Car Name"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/carPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1000$"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Specifications Section with GridLayout -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:rowCount="4"
+        android:useDefaultMargins="true"
+        android:layout_weight="1">
+
+        <!-- Acceleration -->
+        <TextView
+            android:text="Acceleration"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/carAcceleration"
+            android:text="15 km/s"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <!-- Max Speed -->
+        <TextView
+            android:text="Max Speed"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/carMaxSpeed"
+            android:text="200 km/h"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <!-- Deceleration -->
+        <TextView
+            android:text="Deceleration"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/carDeceleration"
+            android:text="10 km/s"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <!-- Engine Type -->
+        <TextView
+            android:text="Engine Type"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/carEngineType"
+            android:text="Fuel"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+    </GridLayout>
+
+    <!-- Read More Button at the Bottom -->
+    <Button
+        android:id="@+id/readmore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="20dp"
+      android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Read More"
+        android:textColor="@color/white" />
+</LinearLayout>
